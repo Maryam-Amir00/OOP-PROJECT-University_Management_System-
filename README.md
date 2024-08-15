@@ -51,28 +51,43 @@ Template functions for flexible and reusable code
 The project is organized into several key components:
 
 panel_imp.h: Implements the main panels (Admin, Student, Teacher) and user interface.
+
 admin_imp.cpp & admin_int.h: Implementation and interface for the Admin class.
+
 student_imp.cpp & student_int.h: Implementation and interface for the Student class.
+
 teacher_imp.cpp & teacher_int.h: Implementation and interface for the Teacher class.
+
 person_imp.cpp & person_int.h: Implementation and interface for the base Person class.
+
 date_imp.cpp & date_int.h: Implementation and interface for the Date class.
+
 template_int.h: Contains template functions for generic operations, like printing records.
 
 **Key Classes:**
 
 Person: Base class for students and teachers, managing common personal information.
+
 Student: Derived from Person, handles student-specific data and operations.
+
 Teacher: Derived from Person, handles teacher-specific data and operations.
+
 Admin: Manages administrative functions for both students and teachers.
+
 Date: Handles date-related operations and validations.
 
 **OOP Concepts and Features:**
 
 **Inheritance:** The Student and Teacher classes inherit from the Person class.
+
 **Polymorphism:** Virtual functions in the Person class are overridden in derived classes.
+
 **Operator Overloading:** Custom implementations for assignment (=) and equality (==) operators.
+
 **File I/O:** Binary file operations ensure data persistence across program executions.
+
 **Templates:** Generic functions for printing records of different types.
+
 **Error Handling:** Extensive use of try-catch blocks and custom exception handling.
 
 **Prerequisites**
@@ -84,17 +99,21 @@ Git (for cloning the repository)
 
 _Clone the repository:_
 
-git clone https://github.com/Maryam-Amir00/OOP-PROJECT-University_Management_System.git
+
+git clone github.com/Maryam-Amir00/OOP-PROJECT-University_Management_System.git
 
 _Navigate to the project directory:_
+
 
 cd OOP-PROJECT-University_Management_System
 
 _Compile the source files:_
 
+
 g++ -o university_system main.cpp admin_imp.cpp student_imp.cpp teacher_imp.cpp person_imp.cpp date_imp.cpp
 
 _Run the executable:_
+
 
 ./university_system
 
