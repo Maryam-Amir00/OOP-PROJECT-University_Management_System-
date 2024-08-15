@@ -75,7 +75,7 @@ The project is organized into several key components:
 
 **Clone the repository:**
 
-git clone https://github.com/Maryam-Amir00/OOP-PROJECT-University_Management_System.git
+git clone https://github.com/Maryam-Amir00/OOP-PROJECT-University_Management_System-.git
 
 **Navigate to the project directory:**
 
