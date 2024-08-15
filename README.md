@@ -115,7 +115,7 @@ Git (for cloning the repository)
 _Clone the repository:_
 
 
-git clone github.com/Maryam-Amir00/OOP-PROJECT-University_Management_System.git
+git clone https://github.com/Maryam-Amir00/OOP-PROJECT-University_Management_System.git
 
 _Navigate to the project directory:_
 
