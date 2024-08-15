@@ -8,31 +8,45 @@ This project is developed as part of the Object-Oriented Programming (OOP) cours
 
 **Features:**
 
-**Admin Panel**
+**Admin Panel:**
 
-Student Management:
+**Student Management:**
+
 Add new students
+
 View existing student records
+
 Update student information
+
 Delete student records
 
-Teacher Management:
+
+**Teacher Management:**
 
 Add new teachers
+
 View existing teacher records
+
 Update teacher information
+
 Delete teacher records
 
-**Student Panel**
+
+**Student Panel:**
 
 Access personal information
+
 View assigned courses based on department
+
 Verify existence in the system
 
-**Teacher Panel**
+
+**Teacher Panel:**
 
 Access personal information
+
 Verify existence in the system
+
 
 **General Features:**
 
