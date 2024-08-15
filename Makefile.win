@@ -1,0 +1,43 @@
+# Project: OOP
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o person_imp.o student_imp.o date_imp.o teacher_imp.o admin_imp.o
+LINKOBJ  = main.o person_imp.o student_imp.o date_imp.o teacher_imp.o admin_imp.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = OOP.exe
+CXXFLAGS = $(CXXINCS) -std=c++11
+CFLAGS   = $(INCS) -std=c++11
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+person_imp.o: person_imp.cpp
+	$(CPP) -c person_imp.cpp -o person_imp.o $(CXXFLAGS)
+
+student_imp.o: student_imp.cpp
+	$(CPP) -c student_imp.cpp -o student_imp.o $(CXXFLAGS)
+
+date_imp.o: date_imp.cpp
+	$(CPP) -c date_imp.cpp -o date_imp.o $(CXXFLAGS)
+
+teacher_imp.o: teacher_imp.cpp
+	$(CPP) -c teacher_imp.cpp -o teacher_imp.o $(CXXFLAGS)
+
+admin_imp.o: admin_imp.cpp
+	$(CPP) -c admin_imp.cpp -o admin_imp.o $(CXXFLAGS)
