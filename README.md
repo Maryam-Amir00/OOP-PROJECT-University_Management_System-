@@ -139,4 +139,3 @@ The system includes robust error handling mechanisms, including:
 ## Contributing
 
 Contributions to the University Management System are welcome. Feel free to fork the repository, make your changes, and submit a pull request. Please ensure that your code adheres to the existing style and is well-documented.
-
